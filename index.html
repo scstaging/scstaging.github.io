@@ -43,7 +43,9 @@
 
         <!-- HOMEPAGE -->
         <section class="homepage">
-            <div class="home-whitespace"></div>
+            <div class="home-whitespace">
+                <object data="assets/IKONIK_LOGO_web.svg" type="image/svg+xml" class="logo-svg"></object>
+            </div>
         </section>
         <!-- END HOMEPAGE -->
 
@@ -53,7 +55,7 @@
                 <div class="divider"></div>
                 <div class="comm-text-divider">
                     <div class="text-container">
-                        <h2>Commercial</h2>
+                        <h2>Residential</h2>
                         <h2>Interior & Exterior</h2>
                         <h2>Commercial Design</h2>
                         <br>
@@ -86,7 +88,7 @@
                 <div class="divider"></div>
                 <div class="divider"></div>
                 <div class="res-divider-text">
-                    <h2>Residential</h2>
+                    <h2>Commercial</h2>
                     <br>
                     <p class="res-p">If you can dream it, we can make it- if you can't quite picture it, let us help bring it into focus.</p>
                 </div>
@@ -175,6 +177,23 @@
             //     console.log(scrollAmount);
             //     window.scroll(0, 0);
             // });
+
+            // Image fading logic
+            const images = [
+                "Comm_Header",
+                "Home_topBanner1b",
+                "Interior_Header"
+            ]
+            const homepage = document.querySelector('.homepage');
+            let i = 0;
+            function changePic() {
+                i++;
+                if (i > images.length - 1)
+                    i = 0;
+                homepage.style.backgroundImage = `url(assets/headers/${images[i]}.png)`;
+                console.log(i);
+            }
+            window.setInterval(changePic, 5000);
 
             // Image
            let bg = document.querySelector('.comm-img-1');
