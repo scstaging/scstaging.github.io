@@ -55,8 +55,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <img src="assets/caro/ResThumb2.png" alt="">
-                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
-                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                            <div onclick="switchImg()" class="test" style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
                         </li>
                         <li class="splide__slide">
                             <img src="assets/caro/ResThumb3.png" alt="">
@@ -190,25 +189,51 @@
         <!-- END CARO -->
 
         <!-- LARGE IMAGE CONTAINER -->
-        <section class="large-image-container">
-            <div class="inner-image-container">
-                <div class="res-large-left">
+        <section class="large-image-container" style="
+    margin: 0 12rem;
+    /* background: border-box; */
+    /* box-sizing: content-box; */
+    /* padding: 11rem; */
+    max-width: 80%;
+    margin: 0 auto;
+">
+            <div class="inner-image-container" style="
+    display: grid;
+    /* width: 80%; */
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+">
+                <div class="res-large-left" style="
+    /* width: 60%; */
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: span 4;
+    grid-row-end: 4;
+    display: flex;
+">
                     <img src="assets/test.png" class="display-img">
                 </div>
-                <div class="res-large-right">
-                    <div class="inner-right-text">
+                <div class="inner-right-text" style="
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    /* display: flex; */
+    padding: 0;
+    margin: 0;
+">
                         <h2>The Bashful Dilatant</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis eros id aliquam fermentum. Integer auctor finibus interdum. Cras volutpat eu dui eu ultrices. Maecenas fermentum nibh nec posuere fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus porttitor cursus porta. Donec commodo, lectus ut porta scelerisque, mi nunc sodales tellus, ut tincidunt quam est et dolor.</p>
-                    </div>
-                    <div class="inner-right">
-                        <img class="res-inner-img" src="assets/caro/ResThumb6.png" style="padding-top: 0;">
-                        <div class="two-block">
-                            <img class="res-inner-img" src="assets/caro/ResThumb9.png">
-                            <img class="res-inner-img" src="assets/caro/ResThumb11.png">
-                        </div>
-                        <img class="res-inner-img" src="assets/caro/ResThumb14.png">
-                    </div>
-                </div>
+                    </div><img class="res-inner-img" src="assets/caro/ResThumb9.png" style="
+    grid-row-start: 3;
+    grid-column-start: 5;
+"><img class="res-inner-img" src="assets/caro/ResThumb11.png" style="
+    grid-row-start: 2;
+    grid-column-start: 5;
+"><img class="res-inner-img" src="assets/caro/ResThumb14.png" style="
+    grid-row-start: 2;
+"><img class="res-inner-img" src="assets/caro/ResThumb6.png" style="padding-top: 0;">
             </div>
         </section>
         <!-- END LARGE IMAGE CONTAINER -->
@@ -242,6 +267,40 @@
                 } );
 
             splide.mount();
+
+            const nameDict = {
+                "ResThumb2.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Weathered Iron' Finish`,
+                "ResThumb3.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Weathered Iron' Finish`,
+                "ResThumb4.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Weathered Iron' Finish`,
+                "ResThumb5.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Weathered Iron' Finish`,
+                "ResThumb6.png": `Custom (Mixed Sizing) 'Shoji' Style Screens • 2"x2" Steel Frame w/ Frosted Acrylic & 'Karbon Black' Finish`,
+                "ResThumb7.png": `Custom (Mixed Sizing) 'Shoji' Style Screens • 2"x2" Steel Frame w/ Frosted Acrylic & 'Karbon Black' Finish`,
+                "ResThumb8.png": `Custom (Mixed Sizing) 'Shoji' Style Screens • 2"x2" Steel Frame w/ Frosted Acrylic & 'Karbon Black' Finish`,
+                "ResThumb9.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb10.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb11.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb12.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb13.png": `72 Series (72"x36") 'Marrakech' Screens • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb14.png": `Custom (44"x88") 'Kyoto' Screen • Sandblasted 'Corten' Steel w/ Natural Oxidized Patina`,
+                "ResThumb15.png": `Custom (56"x47") 'Tejido' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb16.png": `Custom (56"x47") 'Tejido' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb17.png": `Custom (56"x47") 'Tejido' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb18.png": `Custom (36"x56") 'Asanoha' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb19.png": `Custom (36"x56") 'Asanoha' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb20.png": `Custom (120"&96") 'Barroko' Screens • 2"x4" Alum. frame & Marine Grade Alum. Screen w/ 'Oil Rubbed Bronze' Finish`,
+                "ResThumb21.png": `5-Panel (156"x44") 'Momiji' Wall Mural • Marine Grade Alum. w/ 'Oil Rubbed Bronze' Finish`,
+                "ResThumb22.png": `72 Series (72"x36") 'Tiwi' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb23.png": `72 Series (72"x36") 'Tiwi' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb24.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb25.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`
+            }
+            const button = document.querySelector('.test');
+            const container = document.querySelector('.display-img');
+            function switchImg() {
+                const thumb = button.previousElementSibling;
+                container.src = `${thumb.src}`;
+            }
+
         </script>
     </body>
 </html>

@@ -422,57 +422,11 @@ a:visited {
 /****************** END CARO ******************/
 
 /****************** LARGE IMAGE CONTAINER ******************/
-.large-image-container {
+.display-img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.inner-image-container {
-    display: flex;
-    width: 80%;
-}
-.res-large-right {
-    width: 30%;
-}
-.inner-right {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.inner-right img {
-    
+    transition: 2s ease-in-out;
 }
 .inner-right-text {
-    padding: 20px;
-    padding-top: 0px;
-    transform: translate(-50%);
     background-color: white;
-}
-.inner-right-text h2 {
-    width: 550px;
-    font-size: 35px;
-}
-.inner-right-text p {
-    width: 550px;
-    font-size: 15px;
-    line-height: 25px;
-}
-.res-inner-img {
-    padding: 10px;
-}
-.res-large-left {
-    width: 60%;
-    height: fit-content;
-}
-.res-large-left img {
-    width: 100%;
-}
-.res-large-left {
-   width: 60%;
-}
-.two-block {
-    display: flex;
-    flex-direction: row;
 }
 /****************** END LARGE IMAGE CONTAINER ******************/
