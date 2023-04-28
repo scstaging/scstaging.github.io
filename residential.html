@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.css" integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     </head>
     <body>
         <!-- NAV -->
@@ -28,7 +28,7 @@
         <!-- END NAV -->
 
           <!-- GRID -->
-          <div class="page-grid">
+          <div class="page-grid" style="z-index: 5;">
             <div class="divider"><hr class="divider-line"></div>
             <div class="divider"><hr class="divider-line"></div>
             <div class="divider"><hr class="divider-line"></div>
@@ -47,22 +47,167 @@
         <!-- END HOMEPAGE -->
 
         <!-- CARO -->
-        <section style="z-index: 20;">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    <li class="glide__slide">0</li>
-                    <li class="glide__slide">1</li>
-                    <li class="glide__slide">2</li>
-                  </ul>
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                  </div>
-              </div>
+        <section id="image-carousel" class="splide" aria-label="Beautiful Images" style="display: flex;justify-content: center;margin-top: 100px;margin-bottom: 100px;z-index: 10;">
+            <div style="display: flex;width: 80%;justify-content: center;">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb2.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb3.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb4.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb5.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb6.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb7.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb8.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb9.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb10.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb11.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb12.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb13.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb14.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb15.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb16.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb17.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb18.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb19.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb20.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb21.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb21B.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb21C.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb22.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb23.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb24.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/caro/ResThumb25.png" alt="">
+                            <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                            <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
         </section>
         <!-- END CARO -->
+
+        <!-- LARGE IMAGE CONTAINER -->
+        <section class="large-image-container">
+            <div class="inner-image-container">
+                <div class="res-large-left">
+                    <img src="assets/caro/ResThumb20.png">
+                </div>
+                <div class="res-large-right">
+                    <div class="inner-right-text">
+                        <h2>The Bashful Dilatant</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis eros id aliquam fermentum. Integer auctor finibus interdum. Cras volutpat eu dui eu ultrices. Maecenas fermentum nibh nec posuere fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus porttitor cursus porta. Donec commodo, lectus ut porta scelerisque, mi nunc sodales tellus, ut tincidunt quam est et dolor.</p>
+                    </div>
+                    <div class="inner-right">
+                        <img class="res-inner-img" src="assets/caro/ResThumb6.png" style="padding-top: 0;">
+                        <img class="res-inner-img" src="assets/caro/ResThumb9.png">
+                        <img class="res-inner-img" src="assets/caro/ResThumb11.png">
+                        <img class="res-inner-img" src="assets/caro/ResThumb14.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END LARGE IMAGE CONTAINER -->
 
          <!-- FOOTER -->
          <section class="footer">
@@ -81,9 +226,18 @@
         </section>
         <!-- END FOOTER -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js" integrity="sha512-YSRP21JuVGLYbjVo+AzW0RcVwPJM3FTlJ6JwU/EnUT2V2tpHFblsdXeEZvjTYDwDphK8ZFs2tS2+JvATwqSC+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <script>
-            new Glide('.glide').mount()
+            var splide = new Splide( '.splide', {
+                width: '100vw',
+                type: 'loop',
+                perPage: 6,
+                gap: 20,
+                pagination: false,
+                speed: 2000
+                } );
+
+            splide.mount();
         </script>
     </body>
 </html>
