@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- CARO -->
+                <section id="image-carousel" class="splide" aria-label="Beautiful Images" style="display: flex;justify-content: center;">
+                    <div style="display: flex;width: 80%;justify-content: center;">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb3.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb4.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb5.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb6.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb7.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb8.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/caro/ResThumb9.png" alt="">
+                                    <div style="text-align: center;margin-top: 10px;">Description 01</div>
+                                    <div style="text-align: center;font-size: 12px;color: #959595;cursor: pointer;">Click to select</div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                </section>
+        <!-- END CARO -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script>
+            var splide = new Splide( '.splide', {
+                width: '100vw',
+                type: 'loop',
+                perPage: 6,
+                gap: 20,
+                pagination: false,
+                speed: 2000
+                } );
+
+            splide.mount();
+        </script>
+    </body>
+</html>
