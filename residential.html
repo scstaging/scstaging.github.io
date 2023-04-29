@@ -22,7 +22,16 @@
                 <a href="residential.html" class="nav-item"><div>Residential</div></a>
                 <a href="commercial.html" class="nav-item"><div>Commercial</div></a>
                 <a href="#" class="nav-item"><div>Interior</div></a>
-                <a href="#" class="nav-item"><div>Explore</div></a>
+                <a href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav()" onmouseout="removeInnerNav()">
+                    <div>Explore</div>
+                    <div class="inner-explore">
+                        <ul class="inner-explore-container">
+                            <li class="inner-explore-item">Patterns/Motifs</li>
+                            <li class="inner-explore-item">Materials/Finishes</li>
+                            <li class="inner-explore-item">Contact Us</li>
+                        </ul>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- END NAV -->
@@ -282,18 +291,17 @@
         <!-- END LARGE IMAGE CONTAINER -->
 
          <!-- FOOTER -->
-         <section class="footer">
-            <div class="footer-top-container">
-                <div class="footer-contact-info">
-                    <div style="display: flex;">
-                        <p>General Inquiries<br><br>Email - info@ikonikstyle.ca<br><br>Phone - (866) 819 6309</p>
-                        <p style="margin-left: 40px;">Design Inquiries<br><br>Email - craig@ikonikstyle.ca<br><br>Sales Inquiries<br><br>Email - john@ikonikstyle.ca<br><br>rene@ikonikstyle.ca<br><br>Location<br><br>Guelph, Ontario, N1K 1S5</p>
-                    </div>
-                </div>
-                <div></div>
+        <section class="footer">
+            <div class="footer-text">
+                <h2>General Inquiries<br><br>Email - info@ikonikstyle.ca<br><br>Phone - 866 819 6308</h2>
+                <h2>Design Inquiries<br><br>Email - craig@ikonikstyle.ca</h2>
+                <h2>Sales Inquiries<br><br>Email - john@ikonikstyle.ca<br><br>rene@ikonikstyle.ca</h2>
+                <h2>Location<br><br>Guelph, Ontario, N1K 1S5</h2>
             </div>
             <div class="footer-logos">
-
+                <div style="width: 80%;">
+                    <img src="assets/logos.png">
+                </div>
             </div>
         </section>
         <!-- END FOOTER -->
@@ -404,6 +412,15 @@
                     counter += 500;
                 })
             }, 6000)
+
+            // Inner Nav
+            const innerNav = document.querySelector('.inner-explore');
+            function displayInnerNav() {
+                innerNav.style.display = 'flex';
+            }
+            function removeInnerNav() {
+                innerNav.style.display = 'none';
+            }
         </script>
     </body>
 </html>

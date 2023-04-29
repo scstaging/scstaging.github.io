@@ -23,7 +23,16 @@
                 <a href="residential.html" class="nav-item"><div>Residential</div></a>
                 <a href="commercial.html" class="nav-item"><div>Commercial</div></a>
                 <a href="#" class="nav-item"><div>Interior</div></a>
-                <a href="#" class="nav-item"><div>Explore</div></a>
+                <a href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav()" onmouseout="removeInnerNav()">
+                    <div>Explore</div>
+                    <div class="inner-explore">
+                        <ul class="inner-explore-container">
+                            <li class="inner-explore-item">Patterns/Motifs</li>
+                            <li class="inner-explore-item">Materials/Finishes</li>
+                            <li class="inner-explore-item">Contact Us</li>
+                        </ul>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- END NAV -->
@@ -82,7 +91,7 @@
         <section class="residential">
             <div class="residential-grid">
                 <div class="res-divider-img-cont" style="z-index: 5;">
-                    <img class="res-divider-img" src="assets/Commercial_2.png">
+                    <img class="res-divider-img" src="assets/homepage/Commercial_2.png">
                 </div>
                 <div class="divider"></div>
                 <div class="divider"></div>
@@ -108,9 +117,9 @@
         <!-- SYSTEM -->
         <section class="system">
             <div class="system-container">
-                <img class="system-img-1" src="assets/Res_outdoor_home.png">
+                <img class="system-img-1" src="assets/homepage/Res_outdoor_home.png">
                 <div class="system-inner-container">
-                    <img class="system-img-2" src="assets/Residential_home1.png">
+                    <img class="system-img-2" src="assets/homepage/Residential_home1.png">
                     <div class="system-text-container">
                         <h2>The IKONIK System</h2>
                         <br>
@@ -129,7 +138,7 @@
                     <br>
                     <p class="shout-p">While the products that Ikonic offer are not inexpensive, both myself and our clients were extremely impressed with the quality and finish of the screens as well as how easily the product was installed. Ikonik represents high quality materials with fantastic customer service!</p>
                 </div>
-                <img class="shout-img-container" src="assets/Res_outdoor_home2.png">
+                <img class="shout-img-container" src="assets/homepage/Res_outdoor_home2.png">
             </div>
         </section>
         <!-- END SHOUT -->
@@ -137,7 +146,7 @@
         <!-- DEAL -->
         <section class="deal">
             <div class="deal-container">
-                <img src="assets/Res_outdoor_home3.png" class="deal-img-container">
+                <img src="assets/homepage/Res_outdoor_home3.png" class="deal-img-container">
                 <div class="deal-text-container">
                     <h2>So What's the Deal</h2>
                     <br>
@@ -150,7 +159,7 @@
         <!-- BOTTOM BANNER -->
         <section class="bottom-banner">
             <div class="bottom-banner-container">
-                <img class="bottom-banner-img" src="assets/Footer_home1.png">
+                <img class="bottom-banner-img" src="assets/homepage/Footer_home1.png">
                 <div class="overlay">
                     <h2 class="bottom-banner-text">Reach out to discuss your project with us!</h2>
                 </div>
@@ -168,7 +177,7 @@
             </div>
             <div class="footer-logos">
                 <div style="width: 80%;">
-                    <img src="assets/logos.png">
+                    <img src="assets/homepage/logos.png">
                 </div>
             </div>
         </section>
@@ -206,6 +215,15 @@
             bg.style.backgroundPositionY = -window.scrollY*-0.15 - 100 + "px";
             bg2.style.backgroundPositionY = -window.scrollY*0.15 + 250 + "px";
            })
+
+           // Inner Nav
+           const innerNav = document.querySelector('.inner-explore');
+            function displayInnerNav() {
+                innerNav.style.display = 'flex';
+            }
+            function removeInnerNav() {
+                innerNav.style.display = 'none';
+            }
         </script>
         </div>
     </div>
@@ -215,12 +233,12 @@
             <section class="blocks">
                 <div class="blocks-container">
                     <div class="inner-blocks-container">
-                        <img class="block" src="assets/Res_outdoor_home4.png">
-                        <img class="block" src="assets/Residential_home1.png">
+                        <img class="block" src="assets/homepage/Res_outdoor_home4.png">
+                        <img class="block" src="assets/homepage/Residential_home1.png">
                     </div>
                     <div class="inner-blocks-container">
-                        <img class="block" src="assets/Res_outdoor_home3.png">
-                        <img class="block" src="assets/Res_outdoor_home2.png">
+                        <img class="block" src="assets/homepage/Res_outdoor_home3.png">
+                        <img class="block" src="assets/homepage/Res_outdoor_home2.png">
                     </div>
                 </div>
             </section>
