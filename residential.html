@@ -20,7 +20,7 @@
             </div>
             <div class="light-nav">
                 <a href="residential.html" class="nav-item"><div>Residential</div></a>
-                <a href="#" class="nav-item"><div>Commercial</div></a>
+                <a href="commercial.html" class="nav-item"><div>Commercial</div></a>
                 <a href="#" class="nav-item"><div>Interior</div></a>
                 <a href="#" class="nav-item"><div>Explore</div></a>
             </div>
@@ -374,9 +374,11 @@
             const rightImages = document.querySelectorAll('.res-inner-img');
             window.setInterval(() => {
                 let index = 0;
+                let counter = 500;
+                let counter2 = 0;
                 let imgNumbers = [];
                 while (imgNumbers.length < 4) {
-                let r = Math.floor(Math.random()*33);
+                let r = Math.floor(Math.random()*33) + 1;
                 if (imgNumbers.indexOf(r) === -1)
                     imgNumbers.push(r);
                 }
@@ -385,15 +387,20 @@
                     let endSrc = "ResThumb" + imgNumbers[index] + ".png";
                     let newSrc = beginSrc[0] + endSrc;
                     index++;
-                    img.style.opacity = 0;
+                    window.setTimeout(() => {
+                        img.style.opacity = 0;
+                    }, counter2);
+                    counter2 += 500;
                     window.setTimeout(() => {
                         img.src = newSrc;
-                    }, 2000);
+                    }, 500 + counter2);
                     window.setTimeout(() => {
                         img.style.opacity = 1;
-                    }, 2000);
+                    }, 500 + counter);
+                    counter += 500;
+                    console.log(counter)
                 })
-            }, 10000)
+            }, 6000)
         </script>
     </body>
 </html>
