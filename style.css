@@ -88,7 +88,7 @@ li {
 }
 @media screen and (max-width: 1750px) {
     .page-grid {
-        height: 4000px;
+        height: 2500px;
     }
   }
   @media screen and (max-width: 1150px) {
@@ -199,13 +199,13 @@ li {
     height: 175px;
     width: 50vw;
     background-color: #fdfdfd;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .logo-svg {
-    width: 45%;
+    width: 40%;
 }
 /****************** END HOMEPAGE ******************/
 
@@ -501,7 +501,7 @@ li {
 
 /****************** PATTERNS GALLARY ******************/
 .patterns-gallery {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .patterns-container {
     width: 100%;
