@@ -259,7 +259,7 @@
 ">
                         <h2>The Bashful Dilatant</h2>
                         <br>
-                        <p style="
+                        <p class="change-text" style="
     width: 100%;
 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis eros id aliquam fermentum. Integer auctor finibus interdum. Cras volutpat eu dui eu ultrices. Maecenas fermentum nibh nec posuere fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus porttitor cursus porta. Donec commodo, lectus ut porta scelerisque, mi nunc sodales tellus, ut tincidunt quam est et dolor.</p>
                     </div>
@@ -340,18 +340,32 @@
                 "ResThumb22.png": `72 Series (72"x36") 'Tiwi' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
                 "ResThumb23.png": `72 Series (72"x36") 'Tiwi' Screens • Marine Grade Alum. w/ 'Karbon Black' Finish`,
                 "ResThumb24.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`,
-                "ResThumb25.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`
+                "ResThumb25.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb26.png": `Custom 'Grid' Floating Fireplace Surround (18'x7'x2') • Marine Grade Alum. w/ 'Silver Vein' Finish`,
+                "ResThumb27.png": `'Kanopy' (84"x56") Wall Art • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb28.png": `72 Series (72"x36") 'Macchia' Screens • Marine Grade Alum. w/ 'Burnt Copper' Finish`,
+                "ResThumb29.png": `88 Series (88"x44") 'Tangier' Screens w/ Custom Stand-offs • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb30.png": `88 Series (88"x44") 'Tangier' Screens w/ Custom Stand-offs • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb31.png": `88 Series (88"x44") 'Tangier' Screens w/ Custom Stand-offs • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb32.png": `88 Series (88"x44") 'Tangier' Screens w/ Custom Stand-offs • Marine Grade Alum. w/ 'Karbon Black' Finish`,
+                "ResThumb33.png": `(72"x48") 'Tahia' Dörr • Marine Grade Alum. Gate Panel & 6061 Alum. Frame w/ 'Karbon Black' Finish`
             }
 
             // Change Large Image Container
             const container = document.querySelector('.display-img');
+            const text = document.querySelector('.change-text');
             function switchImg(button) {
                 const thumb = button.previousElementSibling;
                 let seperate = thumb.src;
+
+                // Text Change
+                let textSeperate = seperate.split("caro/");
+                text.textContent = `${nameDict[textSeperate[1]]}`
+
+                // Image Change
                 let words = seperate.split(".png");
                 words[0] += "L.png";
-                console.log(words[0]);
-                container.src = `${thumb.src}`;
+                container.src = `${words[0]}`;
             }
         </script>
     </body>
