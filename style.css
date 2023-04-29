@@ -489,9 +489,33 @@ li {
     background-color: white;
 }
 /****************** END LARGE IMAGE CONTAINER ******************/
+
+/****************** MISC ******************/
 .res-inner-img {
     transition: all .5s ease-in-out;
 }
 .splide__slide img {
     cursor: pointer;
 }
+/****************** END MISC ******************/
+
+/****************** PATTERNS GALLARY ******************/
+.patterns-gallery {
+    margin-top: 80px;
+}
+.patterns-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.patterns-inner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pattern-img {
+    width: 32%;
+    margin-bottom: 1%;
+}
+/****************** END PATTERNS GALLARY ******************/

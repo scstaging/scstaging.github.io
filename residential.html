@@ -22,16 +22,16 @@
                 <a href="residential.html" class="nav-item"><div>Residential</div></a>
                 <a href="commercial.html" class="nav-item"><div>Commercial</div></a>
                 <a href="#" class="nav-item"><div>Interior</div></a>
-                <a href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav()" onmouseout="removeInnerNav()">
+                <div href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav()" onmouseout="removeInnerNav()">
                     <div>Explore</div>
                     <div class="inner-explore">
                         <ul class="inner-explore-container">
-                            <li class="inner-explore-item">Patterns/Motifs</li>
-                            <li class="inner-explore-item">Materials/Finishes</li>
-                            <li class="inner-explore-item">Contact Us</li>
+                            <a href="patterns.html"><li class="inner-explore-item">Patterns/Motifs</li></a>
+                            <a><li class="inner-explore-item">Materials/Finishes</li></a>
+                            <a><li class="inner-explore-item">Contact Us</li></a>
                         </ul>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- END NAV -->
@@ -50,7 +50,7 @@
         <!-- END GRID -->
 
         <!-- HOMEPAGE -->
-        <section class="homepage">
+        <section class="homepage" style="background-image: url('assets/headers/Interior_Header.png');">
             <div class="home-whitespace">
                 <object data="assets/IKONIK_LOGO_web.svg" type="image/svg+xml" class="logo-svg"></object>
             </div>
