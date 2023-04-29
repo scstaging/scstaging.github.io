@@ -227,7 +227,7 @@ a:visited {
 }
 .comm-img-2 {
     background-image: url("assets/Res_outdoor_home4.png");
-    height: 50%;
+    height: 60%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -336,31 +336,56 @@ a:visited {
 /****************** END DEAL ******************/
 
 /****************** BOTTOM BANNER ******************/
+.bottom-banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-banner-text {
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    z-index: 20;
+}
 .bottom-banner-img {
     width: 100%;
+}
+.overlay {
+    position: absolute; 
+    background: rgba(18, 18, 18, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
 }
 /****************** END BOTTOM BANNER ******************/
 
 /****************** FOOTER ******************/
 .footer {
-    height: 50vh;
+    height: 40vh;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: rgb(23, 23, 23);
 }
-.footer-top-container {
-    display: flex;
-    flex-direction: row;
-    height: 70%;
-    margin-top: 40px;
-}
-.footer-contact-info {
+.footer-text {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
+    padding: 40px;
     color: white;
+}
+.footer-text h2 {
+    font-size: 15px;
+}
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logos img {
+    width: 100%;
 }
 /****************** END FOOTER ******************/
 
