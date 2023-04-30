@@ -259,13 +259,18 @@ li {
 }
 .comm-img-2 {
     background-image: url("assets/homepage/Res_outdoor_home4.png");
-    height: 60%;
-    width: 80%;
+    height: 40%;
+    width: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-self: flex-end;
 }
+@media screen and (max-width: 1600px) {
+    .comm-img-2 {
+        height: 50%;
+    }
+  }
 /****************** END COMMERCIAL ******************/
 
 /****************** RESIDENTIAL ******************/
@@ -519,3 +524,13 @@ li {
     margin-bottom: 1%;
 }
 /****************** END PATTERNS GALLARY ******************/
+
+/****************** MATERIALS ******************/
+.materials {
+    margin-top: 60px;
+}
+/****************** END MATERIALS ******************/
+.res-inner-img {
+    z-index: 20;
+    cursor: pointer;
+}
