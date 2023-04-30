@@ -400,7 +400,7 @@ li {
 
 /****************** FOOTER ******************/
 .footer {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -502,6 +502,10 @@ li {
 .splide__slide img {
     cursor: pointer;
 }
+.res-inner-img {
+    z-index: 20;
+    cursor: pointer;
+}
 /****************** END MISC ******************/
 
 /****************** PATTERNS GALLARY ******************/
@@ -529,8 +533,21 @@ li {
 .materials {
     margin-top: 60px;
 }
-/****************** END MATERIALS ******************/
-.res-inner-img {
-    z-index: 20;
-    cursor: pointer;
+.materials-img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+.materials-copy {
+    width: 92%;
+    align-self: center;
+}
+.materials-copy p {
+    line-height: 40px;
+}
+.materials-copy h2 {
+    font-size: 40px;
+}
+/****************** END MATERIALS ******************/

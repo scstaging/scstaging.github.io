@@ -36,7 +36,7 @@
         <!-- END NAV -->
 
         <!-- HOMEPAGE -->
-        <section class="homepage" style="background-image: url('assets/patterns/Motif_banner.jpeg');">
+        <section class="homepage" style="background-image: url('assets/headers/Materials_header-min.png');">
             <div class="home-whitespace">
                 <a href="index.html" style="display: flex;justify-content: center;cursor: pointer;z-index: 25;"><img class="logo-svg" src="assets/IKONIK_logo.png"></a>
             </div>
@@ -45,9 +45,29 @@
 
         <!-- PATTERNS GALLERY -->
         <section class="materials">
-            <h2 style="text-align: center;margin-bottom: 60px;font-size: 60px;">Materials</h2>
+            <h2 style="text-align: center;margin-bottom: 20px;font-size: 60px;">Materials</h2>
             <div class="materials-img-container">
-                
+                <img src="assets/materials/Panels_finishes.png">
+                <div class="materials-copy">
+                    <h2>Standard Color Options</h2>
+                    <p>All finished materials undergo a stringent post production QC inspection and target grinding/sanding if required to minimize burring and imperfections. Following this all parts are subjected to a 5 part eco-friendly surface wash & preparation process to maximize powder coat adhesion and product performance.</p>
+                </div>
+                <img src="assets/materials/Messurements.png">
+                <div class="materials-copy">
+                    <h2>Standard Size Options</h2>
+                    <div style="margin-bottom: 60px;">
+                        <p>Aluminum  •  '72 Series' Standard Thickness - 10 Gauge (0.1019" / 2.59mm)</p>
+                        <p>                    '88 Series' Standard Thickness - 8 Gauge (0.1285" / 3.26mm)</p>
+                        <p>(Custom Thicknesses available to 0.75" / 19.05mm -- feasibility dependent on pattern/design)</p>
+                        <p></p>
+                        <p>Steel  •  Available in custom thickness from 0.0598" / 1.519mm - 1" /  25.4mm  (feasibility dependent on pattern/design)</p>
+                        <p></p>
+                        <p>'Corten' / A606 Weathering Steel •  From 0.0598" / 1.519mm - 0.250" / 6.35mm (depending on available material)</p>
+                        <p></p>
+                        <p>Additional material options include : Bronze, copper, brass, stainless steel, Alumalite, mdf, polycarbonate/acrylic etc.</p>
+                        <p style="font-size: 20px;">​Call us today for more details!</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- END PATTERNS GALLERY -->
@@ -67,6 +87,17 @@
             </div>
         </section>
         <!-- END FOOTER -->
+
+        <script>
+            // Inner Nav
+           const innerNav = document.querySelector('.inner-explore');
+            function displayInnerNav() {
+                innerNav.style.display = 'flex';
+            }
+            function removeInnerNav() {
+                innerNav.style.display = 'none';
+            }
+        </script>
 
     </body>
 </html>
