@@ -541,8 +541,9 @@ li {
     margin-bottom: 20px;
 }
 .materials-copy {
-    width: 92%;
+    width: 50%;
     align-self: center;
+    text-align: center;
 }
 .materials-copy p {
     line-height: 40px;
