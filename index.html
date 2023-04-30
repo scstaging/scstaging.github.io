@@ -19,15 +19,33 @@
 
             </div>
             <div class="light-nav">
-                <a href="residential.html" class="nav-item"><div>Residential</div></a>
-                <a href="commercial.html" class="nav-item"><div>Commercial</div></a>
-                <a href="#" class="nav-item"><div>Interior</div></a>
-                <div href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav()" onmouseout="removeInnerNav()">
-                    <div>Explore</div>
+                <div href="#" class="nav-item" onmouseover="displayInnerNav(this)" onmouseout="removeInnerNav(this)">
+                    <div>Portfolio</div>
+                    <div class="inner-explore">
+                        <ul class="inner-explore-container">
+                            <a href="residential.html"><li class="inner-explore-item"><img class="inner-nav-img" src="assets/nav-icons/residential_icon.png"><h2 style="font-size: 14px;font-weight: 300;">Residential</h2></li></a>
+                            <a href="commercial.html"><li class="inner-explore-item"><img class="inner-nav-img" src="assets/nav-icons/Commercial_icon.png"><h2 style="font-size: 14px;font-weight: 300;">Commercial</h2></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div href="#" class="nav-item" style="display: flex;flex-direction: column;" onmouseover="displayInnerNav(this)" onmouseout="removeInnerNav(this)">
+                    <div>Explore Products</div>
+                    <div class="inner-explore">
+                        <ul class="inner-explore-container">
+                            <a href="architextural.html"><li class="inner-explore-item"><img class="inner-nav-img" src="assets/nav-icons/Screen & Post System-min.png"><h2 style="font-size: 12px;font-weight: 300;">Architextural™ Screen & Post System</h2></li></a>
+                            <a href="dorr.html"><li class="inner-explore-item"><img class="inner-nav-img" src="assets/nav-icons/Dor_icon-min.png"><h2 style="font-size: 14px;font-weight: 300;">Dörr​ by Ikonik</h2></li></a>
+                            <a href="towerlight.html"><li class="inner-explore-item"><img class="inner-nav-img" src="assets/nav-icons/LightTower-min.png"><h2 style="font-size: 14px;font-weight: 300;">Tower Light by Ikonik</h2></li></a>
+                            <a><li class="inner-explore-item"></li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div href="#" class="nav-item" style="display: flex;flex-direction: column;">
+                    <div>Contact Us</div>
                     <div class="inner-explore">
                         <ul class="inner-explore-container">
                             <a href="patterns.html"><li class="inner-explore-item">Patterns/Motifs</li></a>
                             <a href="materials.html"><li class="inner-explore-item">Materials/Finishes</li></a>
+                            <a><li class="inner-explore-item">Contact Us</li></a>
                             <a><li class="inner-explore-item">Contact Us</li></a>
                         </ul>
                     </div>
@@ -186,11 +204,12 @@
         <!-- END FOOTER -->
 
         <script src="smoothscroll.js"></script>
+        <script src="nav.js"></script>
 
         <script>
             // Image fading logic
             const images = [
-                "Comm_Header",
+                "ResBanner3",
                 "Home_topBanner1b",
                 "Interior_Header"
             ]
@@ -212,14 +231,6 @@
             bg2.style.backgroundPositionY = -window.scrollY*0.15 + 250 + "px";
             })
 
-            // Inner Nav
-            const innerNav = document.querySelector('.inner-explore');
-            function displayInnerNav() {
-                innerNav.style.display = 'flex';
-            }
-            function removeInnerNav() {
-                innerNav.style.display = 'none';
-            }
         </script>
 
         </div>

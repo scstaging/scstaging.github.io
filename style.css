@@ -144,30 +144,44 @@ li {
 .inner-explore {
     position: absolute;
     background-color: white;
+    width: 0;
     display: none;
-    justify-content: center;
-    width: 12.5%;
+    animation-name: push;
+    animation-duration: .5s;
     height: 200px;
     right: 0;
     top: 100%;
     border-top: black;
 }
+@keyframes push {
+    from {width: 0;}
+    to {width: 62.5%;}
+  }
 .inner-explore-container {
     width: 100%;
-    text-align: center;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 }
 .inner-explore-item {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
     font-weight: 300;
     cursor: pointer;
     transition-duration: .4s;
 }
-.inner-explore-item:hover {
-    border-left: solid #4b4b4b;
-    transition-duration: .1s;
+.inner-nav-img {
+    max-width: 300px;
+    width: 70%;
+    transition-duration: .4s;
+    margin-bottom: 10px;
+}
+.inner-nav-img:hover {
+    transform: scale(1.1);
+    transition-duration: .4s;
 }
 /****************** END NAV ******************/
 
