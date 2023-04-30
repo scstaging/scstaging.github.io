@@ -13,7 +13,6 @@
     </head>
     <body>
         <div class="web">
-        <div class="main">
         <!-- NAV -->
         <div class="nav-container">
             <div class="dark-nav">
@@ -36,6 +35,7 @@
             </div>
         </div>
         <!-- END NAV -->
+        <div class="main">
 
         <!-- GRID -->
         <div class="page-grid">
@@ -185,8 +185,9 @@
         </section>
         <!-- END FOOTER -->
 
-        <script>
+        <script src="smoothscroll.js"></script>
 
+        <script>
             // Image fading logic
             const images = [
                 "Comm_Header",
@@ -200,28 +201,27 @@
                 if (i > images.length - 1)
                     i = 0;
                 homepage.style.backgroundImage = `url(assets/headers/${images[i]}.png)`;
-                console.log(i);
             }
             window.setInterval(changePic, 5000);
 
             // Image
-           let bg = document.querySelector('.comm-img-1');
-           let bg2 = document.querySelector('.comm-img-2');
-           window.addEventListener("scroll", function(){
+            let bg = document.querySelector('.comm-img-1');
+            let bg2 = document.querySelector('.comm-img-2');
+            window.addEventListener("scroll", function(){
             bg.style.backgroundPositionY = -window.scrollY*-0.15 - 100 + "px";
             bg2.style.backgroundPositionY = -window.scrollY*0.15 + 250 + "px";
-           })
+            })
 
-           // Inner Nav
-           const innerNav = document.querySelector('.inner-explore');
+            // Inner Nav
+            const innerNav = document.querySelector('.inner-explore');
             function displayInnerNav() {
                 innerNav.style.display = 'flex';
             }
             function removeInnerNav() {
                 innerNav.style.display = 'none';
             }
-            
         </script>
+
         </div>
     </div>
     <div class="mobile">
