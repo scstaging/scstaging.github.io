@@ -440,47 +440,9 @@ li {
 
 /****************** END FOOTER ******************/
 
-/****************** BLOCKS ******************/
-.blocks-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-.inner-blocks-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.block {
-    width: 47%;
-    margin: 3px;
-}
-/****************** END BLOCKS ******************/
+/****************** MOBILE CONTAINER ******************/
 
-/****************** BOTTOM TEXT ******************/
-.bottom-text {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.bottom-text-container {
-    text-align: center;
-    width: 80%;
-}
-.bottom-text-text {
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 40px;
-}
-@media screen and (max-width: 500px) {
-    .bottom-text-text {
-        font-size: 15px;
-        line-height: 30px;
-    }
-  }
-/****************** END BOTTOM TEXT ******************/
+/****************** END MOBILE CONTAINER ******************/
 
 /****************** P-RES-HEADER ******************/
 .p-res-header {
@@ -569,15 +531,17 @@ li {
 /****************** MATERIALS NAV ******************/
 .materials-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .materials-link {
     font-size: 20px;
     transition-duration: .4s;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .materials-link:hover {
     transition-duration: .4s;
-    color: rgb(123, 123, 123);
+    color: rgb(42, 140, 158);
 }
 /****************** END MATERIALS NAV ******************/
