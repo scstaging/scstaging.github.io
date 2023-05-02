@@ -13,6 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     </head>
     <body>
+        <div class="web">
         <!-- NAV -->
         <div class="nav-container">
             <div class="dark-nav">
@@ -411,5 +412,74 @@
             
         </script>
         </div>
+    </div>
+    
+    <!-- MOBILE -->
+    <div class="mobile">
+
+        <div class="toggle" onclick="displayMobileNav()"><ion-icon name="reorder-three-outline"></ion-icon></div>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav-collapse" style="display: none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="residential.html">Commercial</a></li>
+                <li><a href="architextural.html">Architextural™</a></li>
+                <li><a href="dorr.html">Dörr</a></li>
+                <li><a href="towerlight.html">Tower Light</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li style="position: absolute;bottom: 0;left: 0;width: 100%;padding: 10px;border-radius: 0;text-align: center;"><a href="#">Get in touch: 416-623-5412</a></li>
+            </ul>
+        </nav>
+        <!-- END MOBILE NAV -->
+
+        <!-- MOBILE RES -->
+        <section class="mobile-res">
+            <div class="mobile-whitespace">
+                <a href="index.html" style="display: flex;justify-content: center;cursor: pointer;z-index: 25;"><img class="logo-svg" src="assets/IKONIK_logo.png" style="width: 70%;"></a>
+            </div>
+        </section>
+        <!-- END MOBILE RES -->
+
+        <!-- MOBILE RES IMG -->
+        <section class="mobile-res-img">
+            <div style="display: flex;justify-content: flex-end;">
+                <div class="title-card">
+                    <h2 style="color: white;font-size: 20px;">Commercial</h2>
+                </div>
+            </div>
+            <h2 style="width: 80%;align-self: center;text-align: center;font-size: 20px;margin-bottom: 20px;">We believe that successful design is not just a simple arrangement of detail, it’s a strategic blend of passion, vision, and technical savvy.</h2>
+        </section>
+        <!-- END MOBILE RES IMG -->
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="mobile-nav.js"></script>
+    <script>
+        const mobileResContainer = document.querySelector('.mobile-res-img');
+        console.log(Object.keys(commNameDict).length)
+        for (let i = 1; i < Object.keys(commNameDict).length; i++) {
+            let outImgContainer = document.createElement('div');
+            outImgContainer.classList.add('out-img-container');
+            outImgContainer.setAttribute('onclick', 'imgOverlay(this)');
+            let newText = document.createElement('h2');
+            newText.classList.add('img-overlay');
+            newText.setAttribute('style', 'display: none;')
+            newText.innerHTML = commNameDict[`ComThumb${i}.png`];
+            outImgContainer.appendChild(newText);
+            let newImg = document.createElement('img');
+            newImg.classList.add("mobile-res-img-inner");
+            newImg.src = `assets/comm/ComThumb${i}L-min.png`;
+            outImgContainer.appendChild(newImg);
+            mobileResContainer.appendChild(outImgContainer);
+        }
+        let outImgContainer = document.querySelectorAll('.out-img-container');
+        function imgOverlay(img) {
+            img.firstElementChild.style.display = img.firstElementChild.style.display == 'none' ? 'flex' : 'none';
+        }
+    </script>
+
     </body>
 </html>

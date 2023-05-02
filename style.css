@@ -545,3 +545,114 @@ li {
     color: rgb(42, 140, 158);
 }
 /****************** END MATERIALS NAV ******************/
+
+/****************** MOBILE NAV ******************/
+.toggle {
+    z-index: 21;
+    position: fixed;
+    color: white;
+    right: 0;
+    padding: 10px;
+    font-size: 50px;
+}
+.mobile-nav-collapse {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left,  rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: fixed;
+    right: 0;
+    z-index: 20;
+    justify-content: flex-end;
+    align-items: center;
+    transition-duration: .2;
+    animation: mobileNav .2s ease-in-out;
+}
+.mobile-nav-collapse ul {
+    display: flex;
+    height: 80%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.mobile-nav-collapse ul li {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, .9);
+    font-weight: 300;
+    transition-duration: .4s;
+    border-radius: 20px;
+}
+.mobile-nav-collapse ul li:active {
+    width: 100%;
+    padding: 20px;
+    background-color: #bcbcbc;
+    font-weight: 300;
+    transition-duration: .4s;
+}
+@keyframes mobileNav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+/****************** MOBILE NAV ******************/
+
+/****************** MOBILE RES ******************/
+.mobile-res {
+    background-image: url("assets/headers/Home_topBanner1b.png"); /* The image used */
+    height: 30vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+}
+.mobile-whitespace {
+    height: 50px;
+    width: 50vw;
+    background-color: #fdfdfd;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/****************** MOBILE RES ******************/
+
+/****************** MOBILE RES IMG ******************/
+.mobile-res-img {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.title-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.mobile-res-img-inner {
+    width: 100%;
+}
+.out-img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 2px;
+}
+.img-overlay {
+    position: absolute;
+    width: 100vw;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+/****************** END MOBILE RES IMG ******************/
