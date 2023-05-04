@@ -448,7 +448,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="residential.html">Residential</a></li>
-                <li><a href="residential.html">Commercial</a></li>
+                <li><a href="commercial.html">Commercial</a></li>
                 <li><a href="architextural.html">Architextural™</a></li>
                 <li><a href="dorr.html">Dörr</a></li>
                 <li><a href="towerlight.html">Tower Light</a></li>
@@ -481,6 +481,7 @@
 
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="mobile-nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const mobileResContainer = document.querySelector('.mobile-res-img');
         for (let i = 1; i < Object.keys(nameDict).length; i++) {
@@ -494,7 +495,8 @@
             outImgContainer.appendChild(newText);
             let newImg = document.createElement('img');
             newImg.classList.add("mobile-res-img-inner");
-            newImg.src = `assets/caro/ResThumb${i}L.png`;
+            newImg.classList.add("lazyload");
+            newImg.setAttribute('data-src', `assets/caro/ResThumb${i}L.png`);
             outImgContainer.appendChild(newImg);
             mobileResContainer.appendChild(outImgContainer);
         }
