@@ -440,10 +440,6 @@ li {
 
 /****************** END FOOTER ******************/
 
-/****************** MOBILE CONTAINER ******************/
-
-/****************** END MOBILE CONTAINER ******************/
-
 /****************** P-RES-HEADER ******************/
 .p-res-header {
     height: 40vh;
@@ -663,9 +659,30 @@ li {
     flex-direction: column;
     height: 100vh;
 }
-.mobile-home-header {
+.mobile-inner {
     display: flex;
-    height: 20%;
+    flex-direction: row;
+}
+.mobile-inner-left {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.mobile-inner-left img {
+    width: 100%;
+}
+.mobile-inner-right {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.mobile-inner-right img {
+    width: 100%;
+}
+.mobile-footer {
+    background-color: black;
+    height: 20vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
