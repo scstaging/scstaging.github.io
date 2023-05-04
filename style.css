@@ -670,6 +670,7 @@ li {
 }
 .mobile-inner-left img {
     width: 100%;
+    display: block;
 }
 .mobile-inner-right {
     display: flex;
@@ -678,6 +679,7 @@ li {
 }
 .mobile-inner-right img {
     width: 100%;
+    display: block;
 }
 .mobile-footer {
     background-color: black;
