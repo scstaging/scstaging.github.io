@@ -657,7 +657,6 @@ li {
 .mobile-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 .mobile-inner {
     display: flex;
@@ -683,9 +682,9 @@ li {
 }
 .mobile-footer {
     background-color: black;
-    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
 /****************** END MOBILE HOME PAGE ******************/
