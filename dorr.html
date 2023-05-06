@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="web">
         <!-- NAV -->
         <div class="nav-container">
             <div class="dark-nav">
@@ -101,7 +102,62 @@
 
         <script src="nav.js"></script>
         <script src="smoothscroll.js"></script>
-
+        <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
         </div>
+    </div>
+
+    <div class="mobile">
+
+        <div class="toggle" onclick="displayMobileNav()"><ion-icon name="reorder-three-outline"></ion-icon></div>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav-collapse" style="display: none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="commercial.html">Commercial</a></li>
+                <li><a href="architextural.html">Architextural™</a></li>
+                <li><a href="dorr.html">Dörr</a></li>
+                <li><a href="towerlight.html">Tower Light</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li style="position: absolute;bottom: 0;left: 0;width: 100%;padding: 10px;border-radius: 0;text-align: center;"><a href="#">Get in touch: 866-819-6308</a></li>
+            </ul>
+        </nav>
+        <!-- END MOBILE NAV -->
+
+        <!-- MOBILE RES -->
+        <section class="mobile-res">
+            <div class="mobile-whitespace">
+                <a href="index.html" style="display: flex;justify-content: center;cursor: pointer;z-index: 25;"><img class="logo-svg" src="assets/IKONIK_logo.png" style="width: 70%;"></a>
+            </div>
+        </section>
+        <!-- END MOBILE RES -->
+
+        <!-- CENTERED CONTAINER -->
+        <section class="centered-container">
+            <div class="centered-text-container">
+                <h2>Dörr​ by Ikonik</h2>
+                <br>
+                <p>The Dörr Collection is the pinnacle of form meets function. With a name borrowed from the Swedish word for portal or gate, this Ikonik offering marries the lightweight rigidity and superior outdoor performance of aluminum with sleek mid-century inspired design cues. Finnish architect Juhani Pallasmaa was quoted as saying “the door handle is the handshake of the building”, likewise, the Ikonik Dörr gives your outdoor space the introduction it deserves.</p>
+            </div>
+            <img src="assets/headers/d-rr-spec-pic_orig.jpg">
+            <div class="centered-text-container">
+                <h2>Structural Specifications​</h2>
+                <br>
+                <p>Welded 6061 aluminum tubular frame w/ 3/16“ 5052 aluminum laser cut gate panel (powder-coated with Ikonik ‘Karbon Black’ exterior grade ﬁnish--custom ﬁnishes available)</p>
+            </div>
+            <div class="centered-text-container">
+                <h2>Hinges & Latch​</h2>
+                <br>
+                <p>D&D Technologies TruClose Heavy Duty hinge and LokkLatch® system / Molded polymer with stainless steel mechanisms / Tension adjustable self-closing hinges / Patented magnetic self-latching action, Ergonomic handle / Dual 6 pin re-keyable lock, No visible fasteners / Limited Lifetime Warranty (for details visit www.ddtechglobal.com)</p>
+            </div>
+            <img src="assets/headers/d-rr-colour-pattern-pic_orig.jpg">
+            <div class="footer-whitespace"></div>
+        </section>
+        <!-- END CENTERED CONTAINER -->
+
+    </div>
+
+    <script src="mobile-nav.js"></script>
     </body>
 </html>
