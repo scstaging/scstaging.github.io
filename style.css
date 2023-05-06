@@ -688,3 +688,26 @@ li {
     height: 100px;
 }
 /****************** END MOBILE HOME PAGE ******************/
+
+/****************** CENTERED CONTAINER ******************/
+.centered-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.centered-text-container {
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+}
+.centered-text-container p {
+    line-height: 30px;
+}
+.centered-container img {
+    width: 100%;
+}
+.footer-whitespace {
+    margin-top: 40px;
+}
+/****************** END CENTERED CONTAINER ******************/
