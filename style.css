@@ -477,6 +477,11 @@ li {
     z-index: 20;
     cursor: pointer;
 }
+.text-container-mobile-contact {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+}
 /****************** END MISC ******************/
 
 /****************** PATTERNS GALLARY ******************/
@@ -708,6 +713,6 @@ li {
     width: 100%;
 }
 .footer-whitespace {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 /****************** END CENTERED CONTAINER ******************/
