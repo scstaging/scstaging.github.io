@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="web">
         <!-- NAV -->
         <div class="nav-container">
             <div class="dark-nav">
@@ -125,5 +126,81 @@
         <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
         </div>
+    </div>
+
+    <div class="mobile">
+
+        <div class="toggle" onclick="displayMobileNav()"><ion-icon name="reorder-three-outline"></ion-icon></div>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav-collapse" style="display: none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="commercial.html">Commercial</a></li>
+                <li><a href="architextural.html">Architextural™</a></li>
+                <li><a href="dorr.html">Dörr</a></li>
+                <li><a href="towerlight.html">Tower Light</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li style="position: absolute;bottom: 0;left: 0;width: 100%;padding: 10px;border-radius: 0;text-align: center;"><a href="#">Get in touch: 866-819-6308</a></li>
+            </ul>
+        </nav>
+        <!-- END MOBILE NAV -->
+
+        <!-- MOBILE RES -->
+        <section class="mobile-res">
+            <div class="mobile-whitespace">
+                <a href="index.html" style="display: flex;justify-content: center;cursor: pointer;z-index: 25;"><img class="logo-svg" src="assets/IKONIK_logo.png" style="width: 70%;"></a>
+            </div>
+        </section>
+        <!-- END MOBILE RES -->
+
+        <!-- CENTERED CONTAINER -->
+        <section class="centered-container">
+            <h2 style="text-align: center;font-size: 30px;margin-top: 20px;margin-bottom: 20px;">Patterns & Motifs</h2>
+                <div class="patterns-container">
+                    <div class="patterns-inner-container">
+                        <img class="pattern-img" src="assets/patterns/grano_orig_Large.png">
+                        <img class="pattern-img" src="assets/patterns/hai-panel-lit-back_Large.png">
+                        <img class="pattern-img" src="assets/patterns/komiko_Large.png">
+                        <img class="pattern-img" src="assets/patterns/koyo_orig_Large.png">
+                        <img class="pattern-img" src="assets/patterns/lhasa_orig_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-asanohafade-m_1_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-barroko-m_1_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-damask-m_2_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-fall-m_5_Larger.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-fizz-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-flux-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-helix-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-kanopy-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-kasbah-Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-kubikfade-Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-kurv-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-kyoto-Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-macchia-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-marrakesh-Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-seven-m_1_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-tangir-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-taza-m-copy_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-tejido-m_3_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-tiwi-m_Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-waikoko-Large.png">
+                        <img class="pattern-img" src="assets/patterns/panel-lit-back-waikoko-m_1_Large.png">
+                    </div>
+                </div>
+            <div class="footer-whitespace"></div>
+            <!-- MATERIALS NAV -->
+            <div class="materials-nav" style="margin-top: 40px;">
+                <a href="architextural.html"><p class="materials-link"><ion-icon name="caret-back-outline" style="transform: translateY(3px);"></ion-icon>Architextural™ Screen & Post System</p></a>
+                <p class="materials-link" style="font-weight: 100;"></p>
+                <a href="patterns.html"><p class="materials-link">Patterns and Motifs<ion-icon name="caret-forward-outline" style="transform: translateY(4px);"></ion-icon></p></a>
+            </div>
+            <!-- END MATERIALS NAV -->
+        </section>
+        <!-- END CENTERED CONTAINER -->
+
+    </div>
+
+    <script src="mobile-nav.js"></script>
     </body>
 </html>
