@@ -205,6 +205,35 @@
         <script src="nav.js"></script>
 
         <script>
+            // Preloader
+            function preloadImage(url) {
+                let img = new Image();
+                img.src = url;
+            }
+            let imgUrls = [];
+            // Add Residential Images
+            for (let i = 1; i < 34; i++) {
+                imgUrls.push(`assets/caro/ResThumb${1}.png`);
+            }
+            // Add Residential Large Images
+            for (let i = 1; i < 34; i++) {
+                imgUrls.push(`assets/caro/ResThumb${1}L.png`);
+            }
+            // Add Commercial Images
+            for (let i = 1; i < 34; i++) {
+                imgUrls.push(`assets/caro/ComThumb${1}.png`);
+            }
+            // Add Commercial Large Images
+            for (let i = 1; i < 22; i++) {
+                imgUrls.push(`assets/caro/ComThumb${1}L.png`);
+            }
+            // Preload
+            for (let i = 0; i < imgUrls.length; i++) {
+                preloadImage(imgUrls[i]);
+            }
+        </script>
+
+        <script>
             // Image fading logic
             const images = [
                 "ResBanner3",

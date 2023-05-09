@@ -370,7 +370,6 @@
                 // Text Change
                 text.style.opacity = 0;
                 let textSeperate = seperate.split("comm/");
-                console.log(textSeperate);
                 window.setTimeout(() => {
                     text.textContent = `${commNameDict[textSeperate[1]]}`
                 }, 600);
@@ -466,7 +465,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const mobileResContainer = document.querySelector('.mobile-res-img');
-        console.log(Object.keys(commNameDict).length)
         for (let i = 1; i < Object.keys(commNameDict).length; i++) {
             let outImgContainer = document.createElement('div');
             outImgContainer.classList.add('out-img-container');
