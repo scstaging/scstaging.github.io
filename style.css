@@ -36,6 +36,18 @@ li {
     height: 400px;
 }
 
+.preloader {
+    background: #000 url('assets/IKONIK_logo.png') no-repeat center center;
+    background-size: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 150;
+}
+
 @media screen and (max-width: 1600px) {
     .whitespace {
         height: 250px;
