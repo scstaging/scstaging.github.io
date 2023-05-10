@@ -53,11 +53,11 @@ imgUrls.push(`assets/homepage/Residential_Home2-min.png`);
 imgUrls.push(`assets/materials/Messurements.png`);
 imgUrls.push(`assets/materials/Panels_finishes.png`);
 // Nav Icons Images
-imgUrls.push(`assets/nav-icons/Commercial_icon.png`);
-imgUrls.push(`assets/nav-icons/Dor_icon-min.png`);
-imgUrls.push(`assets/nav-icons/LightTower-min.png`);
-imgUrls.push(`assets/nav-icons/residential_icon.png`);
-imgUrls.push(`assets/nav-icons/Screen & Post System-min.png`);
+imgUrls.push(`assets/nav-icons/Commercial_icon.jpg`);
+imgUrls.push(`assets/nav-icons/Dor_icon-min.jpg`);
+imgUrls.push(`assets/nav-icons/LightTower-min.jpg`);
+imgUrls.push(`assets/nav-icons/residential_icon.jpg`);
+imgUrls.push(`assets/nav-icons/Screen & Post System-min.jpg`);
 // Patterns Images
 imgUrls.push(`assets/pattern/grano_orig_Large.png`);
 imgUrls.push(`assets/pattern/hai-panel-lit-back_Large.png`);

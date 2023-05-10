@@ -37,8 +37,8 @@ li {
 }
 
 .preloader {
-    background: #000 url('assets/IKONIK_logo.png') no-repeat center center;
-    background-size: 30%;
+    background: #fff url('assets/loader.gif') no-repeat center center;
+    background-size: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
