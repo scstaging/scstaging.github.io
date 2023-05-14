@@ -229,7 +229,7 @@ li {
     align-items: flex-end;
 }
 .logo-svg {
-    width: 40%;
+    width: 100%;
 }
 /****************** END HOMEPAGE ******************/
 
@@ -252,6 +252,14 @@ li {
     grid-template-columns: repeat(8, 12.5vw);
     height: 100%;
     overflow-x: visible;
+}
+.whitespace-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5vw);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-self: center;
 }
 .comm-text-divider {
     display: flex;
