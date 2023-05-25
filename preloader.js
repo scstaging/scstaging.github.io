@@ -5,20 +5,20 @@
 }
 let imgUrls = [];
 // Add Residential Images
-for (let i = 1; i < 34; i++) {
+for (let i = 1; i < 70; i++) {
     imgUrls.push(`assets/caro/ResThumb${1}.png`);
 }
 // Add Residential Large Images
-for (let i = 1; i < 34; i++) {
-    imgUrls.push(`assets/caro/ResThumb${1}L.png`);
+for (let i = 1; i < 70; i++) {
+    imgUrls.push(`assets/caro/ResThumb${1}L.jpg`);
 }
 // Add Commercial Images
-for (let i = 1; i < 34; i++) {
+for (let i = 1; i < 22; i++) {
     imgUrls.push(`assets/caro/ComThumb${1}.png`);
 }
 // Add Commercial Large Images
 for (let i = 1; i < 22; i++) {
-    imgUrls.push(`assets/caro/ComThumb${1}L.png`);
+    imgUrls.push(`assets/caro/ComThumb${1}L-min.jpg`);
 }
 // Added Contact Images
 imgUrls.push(`assets/contact/Contact2.jpg`);
@@ -50,8 +50,8 @@ imgUrls.push(`assets/homepage/Res_outdoor_home4.png`);
 imgUrls.push(`assets/homepage/Residential_home1.png`);
 imgUrls.push(`assets/homepage/Residential_Home2-min.png`);
 // Added Materials Images
-imgUrls.push(`assets/materials/Messurements.png`);
-imgUrls.push(`assets/materials/Panels_finishes.png`);
+imgUrls.push(`assets/materials/Messurements.jpg`);
+imgUrls.push(`assets/materials/Panels_finishes.jpg`);
 // Nav Icons Images
 imgUrls.push(`assets/nav-icons/Commercial_icon.jpg`);
 imgUrls.push(`assets/nav-icons/Dor_icon-min.jpg`);
